@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/img_bt_ekim_tarihi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="16dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/et_ekim_tarihi"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_ekim_tarihi"
+        app:layout_constraintVertical_bias="0.516"
+        app:srcCompat="@mipmap/ic_tarih" />
+
+
+    <com.reginald.editspinner.EditSpinner
+        android:id="@+id/spnr_urun_adi"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_color"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:dropDownDrawable="@drawable/ic_spinner_icon"
+        app:dropDownDrawableHeight="25dp"
+        app:dropDownDrawableSpacing="15dp"
+        app:dropDownDrawableWidth="25dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/et_miktar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/et_miktar"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/edittext_miktar_hint"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/spnr_urun_adi"
+        app:layout_constraintRight_toLeftOf="@+id/spnr_miktar_turu"
+        app:layout_constraintStart_toEndOf="@+id/spnr_urun_adi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <com.reginald.editspinner.EditSpinner
+        android:id="@+id/spnr_miktar_turu"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_color"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:dropDownDrawable="@drawable/ic_spinner_icon"
+        app:dropDownDrawableHeight="25dp"
+        app:dropDownDrawableSpacing="15dp"
+        app:dropDownDrawableWidth="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_miktar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_miktar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Ekim Tarihi"
+        android:textSize="@dimen/urun_ekle_text_size"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_ekim_tarihi"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/et_ekim_tarihi"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+
+        android:theme="@style/EditTextTheme"
+        android:ems="10"
+        android:hint="@string/edittext_ekim_tarihi_hint"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textColorHighlight="#087f23"
+        android:textSize="14sp"
+        app:layout_constraintRight_toLeftOf="@+id/img_bt_ekim_tarihi"
+        app:layout_constraintStart_toStartOf="@+id/et_hasat_tarihi"
+        app:layout_constraintTop_toBottomOf="@+id/spnr_urun_adi" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Hasat Tarihi"
+        android:textSize="@dimen/urun_ekle_text_size"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_hasat_tarihi"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/et_hasat_tarihi"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="16dp"
+        android:theme="@style/EditTextTheme"
+        android:ems="10"
+        android:hint="@string/edittext_hasat_tarihi_hint"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textColorHighlight="#087f23"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/img_bt_hasat_tarihi"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/et_ekim_tarihi" />
+
+    <TextView
+        android:id="@+id/tv_birim_fiyat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Birim Fiyatı"
+        android:textSize="@dimen/urun_ekle_text_size"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_birim_fiyat"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/et_birim_fiyat"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:theme="@style/EditTextTheme"
+        android:ems="10"
+
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColorHighlight="#087f23"
+        android:textSize="14sp"
+        android:hint="@string/edittext_birim_fiyati_hint"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/tv_birim_fiyat"
+        app:layout_constraintRight_toLeftOf="@+id/spnr_para_birimi"
+        app:layout_constraintStart_toStartOf="@+id/et_hasat_tarihi"
+        app:layout_constraintTop_toBottomOf="@+id/et_hasat_tarihi" />
+
+
+    <com.reginald.editspinner.EditSpinner
+        android:id="@+id/spnr_para_birimi"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/border_color"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:dropDownDrawable="@drawable/ic_spinner_icon"
+        app:dropDownDrawableHeight="25dp"
+        app:dropDownDrawableSpacing="15dp"
+        app:dropDownDrawableWidth="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_birim_fiyat"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_birim_fiyat" />
+
+    <Button
+        android:id="@+id/btn_ekle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:background="#4db6ac"
+        android:text="EKLE"
+        android:textColor="#222222"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spnr_para_birimi"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_birim_fiyat" />
+
+    <ImageButton
+        android:id="@+id/img_bt_hasat_tarihi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="16dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/et_hasat_tarihi"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_hasat_tarihi"
+        app:srcCompat="@mipmap/ic_tarih" />
+
+    <Button
+        android:id="@+id/btn_getir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="#e57373"
+        android:text="GETİR"
+        android:textColor="#222222"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_ekle"
+        app:layout_constraintEnd_toStartOf="@+id/btn_ekle"
+        app:layout_constraintTop_toTopOf="@+id/btn_ekle"
+        android:layout_marginRight="16dp" />
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fab"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="end|bottom"-->
+    <!--android:layout_margin="@dimen/fab_margin"-->
+    <!--android:layout_marginBottom="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+
+</android.support.constraint.ConstraintLayout>

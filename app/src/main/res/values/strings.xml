@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">my_farming</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string-array name="urun_adi_dizisi">
+        <item>Mısır</item>
+        <item>Domates</item>
+        <item>Biber</item>
+        <item>Patlıcan</item>
+        <item>Salatalık</item>
+        <item>Karpuz</item>
+        <item>Lahana</item>
+        <item>Marul</item>
+    </string-array>
+    <string-array name="miktar_birimi">
+        <item>KG</item>
+        <item>Gram</item>
+    </string-array>
+    <string-array name="para_birimi">
+        <item>TL</item>
+        <item>AZN</item>
+        <item>Dolar</item>
+    </string-array>
+    <string name="title_activity_ekim_alani_harita">Map</string>
+    <string name="title_activity_harita">Map</string>
+    <string name="button">Button</string>
+    <string name="title_activity_ekim_alanlari_">Map</string>
+
+
+    <string name="edittext_miktar_hint"><font size="10">Miktar</font></string>
+    <string name="edittext_hasat_tarihi_hint"><font size="10">Hasat Tarihi</font></string>
+    <string name="edittext_ekim_tarihi_hint"><font size="10">Ekim Tarihi</font></string>
+    <string name="edittext_birim_fiyati_hint"><font size="10">Birim Fiyati</font></string>
+
+</resources>

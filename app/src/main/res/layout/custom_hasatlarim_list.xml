@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/custom_listview_shadow"
+    app:cardCornerRadius="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/custom_tv_urun_adi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tv_background_bottom_color_shape"
+            android:elevation="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:text="Urun Adi"
+            android:textColor="?attr/editTextColor"
+            android:textSize="@dimen/list_view_urun_turu"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/custom_tv_toplam_fiyat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:gravity="right"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Fiyat"
+            android:textColor="?attr/editTextColor"
+            android:textSize="@dimen/list_view_bilgiler" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/custom_tv_konum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Miktar :"
+            android:textSize="@dimen/list_view_bilgiler" />
+
+        <TextView
+            android:id="@+id/custom_tv_miktar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="@dimen/list_view_bilgiler" />
+
+        <TextView
+            android:id="@+id/custom_tv_hasilat_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:text="Hasat Tarihi:"
+            android:textSize="@dimen/list_view_bilgiler" />
+
+        <TextView
+            android:id="@+id/custom_tv_hasilat_tarihi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="21.11/11"
+            android:textSize="@dimen/list_view_bilgiler" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/custom_tv_ekim_tarihi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="ekim_tarihi"
+            android:textSize="10sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+
+</LinearLayout>

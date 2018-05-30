@@ -1,0 +1,66 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/harita_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/shape_harita_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="120dp">
+
+        <TextView
+            android:id="@+id/harita_btn_yazi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/harita_btn_resim"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="Alanı Çiz"
+            android:textColor="#f44336"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/harita_btn_resim"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/ic_harita_cicek_btn"
+            android:clickable="false"
+            android:enabled="false"
+            android:padding="5dp"
+            app:srcCompat="@mipmap/ic_harita_cicek_btn" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/harita_urun_ekle_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_harita_urun_ekle_onayla"
+        app:layout_constraintBottom_toBottomOf="@+id/harita_btn"
+        app:layout_constraintStart_toEndOf="@+id/harita_btn"
+        app:layout_constraintTop_toTopOf="@+id/harita_btn" />
+
+
+</android.support.constraint.ConstraintLayout>
